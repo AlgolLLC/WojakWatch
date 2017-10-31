@@ -1,0 +1,8 @@
+template(name="index")
+	.container
+		+each coins
+			.row 
+				.col.s6
+					| {{holdings}} {{coin_symbol}}
+				.col.s6
+					| {{fiat_value}} USD
