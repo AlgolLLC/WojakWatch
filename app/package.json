@@ -1,0 +1,18 @@
+{
+  "name": "app",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "desktop": "meteor-desktop"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "meteor-node-stubs": "^0.3.2",
+    "node-coinmarketcap": "^0.2.0",
+    "node-coinmarketcap-api": "^1.0.3",
+    "simpl-schema": "^0.3.2"
+  },
+  "devDependencies": {
+    "meteor-desktop": "^0.10.0"
+  }
+}
