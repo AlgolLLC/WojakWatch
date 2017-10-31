@@ -1,0 +1,87 @@
+{
+    "name": "Wojak Watch",
+    "version": "0.0.1",
+    "projectName": "WojakWatch",
+    "devTools": false,
+    "devtron": false,
+    "desktopHCP": true,
+    "desktopHCPIgnoreCompatibilityVersion": false,
+    "autoUpdateFeedUrl": "http://127.0.0.1/update/:platform/:version",
+    "autoUpdateFeedHeaders": {},
+    "autoUpdateCheckOnStart": false,
+    "rebuildNativeNodeModules": false,
+    "webAppStartupTimeout": 60000,
+    "exposeLocalFilesystem": false,
+    "window": {
+        "icon": "@assets/meteor.png",
+        "_windows": {
+            "icon": "@assets/wojak.ico"
+        }
+    },
+    "windowDev": {
+    },
+    "uglify": true,
+    "plugins": {
+        "meteor-desktop-splash-screen": {
+            "version": "0.3.0",
+	    "imagePath:": "splashScreen.png",
+            "windowSettings": {
+                "width": 560,
+                "height": 316
+            }
+        },
+        "meteor-desktop-localstorage": "0.0.11"
+    },
+    "dependencies": {},
+    "packageJsonFields": {
+        "description": "Wojak Watch",
+        "author": "Ethan Willis",
+        "private": true
+    },
+    "builderOptions": {
+        "win": {
+            "title": "Wojak Watch",
+            "authors": "Ethan Willis",
+            "target": "squirrel"
+        },
+        "squirrelWindows": {
+            "iconUrl": "https://github.com/wojtkowiak/meteor-desktop/blob/beta/scaffold/assets/wojak.ico?raw=true",
+            "loadingGif": ".desktop/assets/wojaksplash.png"
+        },
+        "icon": ".desktop/assets/wojak.ico",
+        "appId": "meteor.app",
+        "productName": "WojakWatch",
+        "compression": "maximum",
+        "mac": {
+            "icon": ".desktop/assets/meteor.icns"
+        },
+        "dmg": {
+            "icon": ".desktop/assets/meteor.icns",
+            "background": ".desktop/assets/wojaksplash.png",
+            "iconSize": 54,
+            "contents": [
+                { "x": 377, "y": 190, "type": "link", "path": "/Applications" },
+                { "x": 63, "y": 190, "type": "file" }
+            ],
+            "window": {
+                "width": 480,
+                "height": 300
+            }
+        }    },
+    "packagerOptions": {
+        "icon": ".desktop/assets/wojak.ico",
+        "_osx": {
+            "icon": ".desktop/assets/meteor.icns"
+        },
+        "version-string": {
+            "CompanyName": "AlgolLLC",
+            "LegalCopyright": "Copyright 2017 AlgolLLC - All rights reserved.",
+            "FileDescription": "WojakWatch",
+            "OriginalFilename": "WojakWatch.exe",
+            "FileVersion": "@version",
+            "ProductVersion": "@version",
+            "ProductName": "WojakWatch",
+            "InternalName": "WojakWatch.exe"
+        }
+    }
+}
